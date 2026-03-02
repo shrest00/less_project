@@ -1,0 +1,47 @@
+@import "variables.less";
+@import "mixins.less";
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 120px;
+}
+
+
+.box-red { 
+  .box-style(@red-color, 100); 
+}
+.box-blue { 
+  .box-style(@blue-color, 200); 
+}
+.box-green {
+  .box-style(@green-color, 250); 
+}
+.box-purple { 
+  .box-style(@purple-color, 50); 
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  color: white;
+  margin-top: 50px;
+}
